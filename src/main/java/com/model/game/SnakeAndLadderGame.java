@@ -1,9 +1,13 @@
-package com.model;
+package com.model.game;
+
+import com.model.Player;
+import com.model.board.BasicBoard;
 
 public abstract class SnakeAndLadderGame {
-    private static BasicBoard basicBoard = BasicBoard.getBasicBoard();
+    private BasicBoard basicBoard;
 
-    public SnakeAndLadderGame() {
+    public SnakeAndLadderGame(BasicBoard basicBoard) {
+        this.basicBoard = basicBoard;
     }
 
     public BasicBoard getBasicBoard() {

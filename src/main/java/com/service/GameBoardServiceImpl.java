@@ -1,6 +1,7 @@
 package com.service;
 
 import com.model.*;
+import com.model.game.SnakeAndLadderGame;
 
 public class GameBoardServiceImpl implements GameBoardService {
     private SnakeAndLadderGame snakeAndLadderGame;

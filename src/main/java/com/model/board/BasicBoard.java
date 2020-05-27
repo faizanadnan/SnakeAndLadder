@@ -1,4 +1,7 @@
-package com.model;
+package com.model.board;
+
+import java.util.Collections;
+import java.util.Map;
 
 public class BasicBoard {
     private static String boardName;
@@ -7,7 +10,7 @@ public class BasicBoard {
 
     private static BasicBoard basicBoard;
 
-    private BasicBoard(String boardName, int boardSize) {
+    public BasicBoard(String boardName, int boardSize) {
         this.boardName = boardName;
         this.boardSize = boardSize;
     }
@@ -43,4 +46,9 @@ public class BasicBoard {
             basicBoard = new BasicBoard("SnakeAndLadder", 100);
             return basicBoard;
     }
+
+    public Map<Integer, Integer> getSpecialMoves() {
+        return Collections.emptyMap();
+    }
+    public void setSpecialMoves(Map<Integer, Integer> specialMoves) { }
 }
